@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Suite">
+  <test name="Test">
+    <classes>
+      <class name="sanity.SignIn_TC01"/>
+      <class name="sanity.Home_TC02"/>
+      <class name="sanity.Home_TC01"/>
+      <class name="sanity.LiveStrm_TC01"/>
+      <class name="sanity.Saved_TC09"/>
+      <class name="sanity.Setting_TC05"/>
+      <class name="sanity.OOH_TC01"/>
+      <class name="sanity.Saved_TC07"/>
+      <class name="sanity.Setting_TC07"/>
+      <class name="sanity.LiveStrm_TC02"/>
+      <class name="sanity.Setting_TC06"/>
+      <class name="sanity.Setting_TC03"/>
+      <class name="sanity.Saved_TC01"/>
+      <class name="sanity.Saved_TC02"/>
+      <class name="sanity.TVGuide_TC03"/>
+      <class name="sanity.VOD_TC05"/>
+      <class name="sanity.Saved_TC05"/>
+      <class name="sanity.Saved_TC06"/>
+      <class name="sanity.Search_TC02"/>
+      <class name="sanity.TVGuide_TC01"/>
+      <class name="sanity.Search_TC03"/>
+      <class name="sanity.VOD_TC01"/>
+      <class name="sanity.Search_TC01"/>
+      <class name="sanity.VOD_TC02"/>
+    </classes>
+  </test> <!-- Test -->
+</suite> <!-- Suite -->
