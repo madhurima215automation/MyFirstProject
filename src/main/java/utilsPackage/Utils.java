@@ -100,20 +100,15 @@ public class Utils {
 	}
 	
 	
-		public static DesiredCapabilities getCapabilities(String runOn, String systemPort){
-			platformName = dynamicContent.getProperty("platformName");
-			deviceName = dynamicContent.getProperty("deviceName");
-			appPackage = dynamicContent.getProperty("appPackage");
-			appActivity = dynamicContent.getProperty("appActivity");
-			automationName = dynamicContent.getProperty("automationName");
+		public static DesiredCapabilities getCapabilities(){
+			
 			capabilities = new DesiredCapabilities();
-			capabilities.setCapability(MobileCapabilityType.PLATFORM_NAME, platformName);
-			capabilities.setCapability(MobileCapabilityType.DEVICE_NAME,deviceName);
+			capabilities.setCapability("deviceName", deviceName);
+			capabilities.setCapability("udid", udid);
+			capabilities.setCapability("platformName", platformName);
+			capabilities.setCapability("platformVersion", platformVersion);
 			capabilities.setCapability("appPackage", appPackage);
 			capabilities.setCapability("appActivity", appActivity);
-			capabilities.setCapability("automationName", automationName);
-			capabilities.setCapability("udid", runOn);
-			capabilities.setCapability("systemPort", systemPort);
 			return capabilities;
 		}
 	
