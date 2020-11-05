@@ -27,7 +27,7 @@ public class productPurchase {
 	@Parameters({"runOn","systemPort"})
 	public void setupInitialization(String runOn,String systemPort) throws MalformedURLException{
 		Utils.initializeVariables();
-		AndroidDriver androidDriver = new AndroidDriver(new URL(Utils.serverAddress),Utils.getCapabilities(runOn,systemPort));
+		AndroidDriver androidDriver = new AndroidDriver(new URL(Utils.serverAddress),Utils.getCapabilities());
 		driver = androidDriver;
 		driver.manage().timeouts().implicitlyWait(60, TimeUnit.SECONDS);
 	}
